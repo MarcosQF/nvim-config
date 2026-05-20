@@ -1,6 +1,7 @@
 vim.pack.add({ 'https://github.com/ibhagwan/fzf-lua' })
+local fzf = require("fzf-lua")
 
-require('fzf-lua').setup({
+fzf.setup({
     winopts = {
         backdrop = 100,
         border = "rounded",
@@ -15,6 +16,8 @@ require('fzf-lua').setup({
         },
     },
 })
+
+fzf.register_ui_select()
 
 vim.keymap.set("n", "<leader>f", function()
     require("fzf-lua").files()
