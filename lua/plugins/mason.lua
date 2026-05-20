@@ -20,7 +20,7 @@ require("mason-lspconfig").setup({
     "pyright",
     "ruff",
     "lua_ls",
-    "css-lsp",
+    "cssls",
     "taplo",
   },
 })
