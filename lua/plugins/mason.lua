@@ -19,6 +19,8 @@ require("mason-lspconfig").setup({
   ensure_installed = {
     "pyright",
     "ruff",
-    "lua_ls"
+    "lua_ls",
+    "css-lsp",
+    "taplo",
   },
 })
