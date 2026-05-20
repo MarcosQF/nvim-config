@@ -52,11 +52,11 @@ vim.diagnostic.config({
     spacing = 4,
     source = "if_many",
   },
-  
+
   signs = false, -- show on gutter
-  underline = true, 
-  update_in_insert = false, 
-  severity_sort = true, 
+  underline = true,
+  update_in_insert = false,
+  severity_sort = true,
   float = {
     border = "rounded",
     source = true,

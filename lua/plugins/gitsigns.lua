@@ -49,3 +49,7 @@ require('gitsigns').setup {
     col = 1
   },
 }
+
+vim.keymap.set("n", "<leader>gb", function()
+  require("gitsigns").blame_line({ full = true })
+end, { desc = "Git Blame Line" })
