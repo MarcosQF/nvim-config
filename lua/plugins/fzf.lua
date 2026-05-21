@@ -19,7 +19,7 @@ fzf.setup({
 
 fzf.register_ui_select()
 
-vim.keymap.set("n", "<leader>f", function()
+vim.keymap.set("n", "<leader><leader>", function()
     require("fzf-lua").files()
 end, { desc = "Fzf-Lua: Find files" })
 

@@ -15,6 +15,11 @@ require("rose-pine").setup(
             },
             Comment = { fg = "#9da8b3", italic = true },
         },
+        styles = {
+          bold = true,
+          italic = true,
+          transparency = true,
+        },
     }
 )
 
