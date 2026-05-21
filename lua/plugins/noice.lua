@@ -2,7 +2,6 @@ vim.pack.add(
     {
         'https://github.com/folke/noice.nvim',
         'https://github.com/MunifTanjim/nui.nvim',
-        'https://github.com/rcarriga/nvim-notify'
     }
 )
 
@@ -20,5 +19,13 @@ require("noice").setup({
         long_message_to_split = true,
         inc_rename = true,
         lsp_doc_border = false,
+    },
+    views = {
+        mini = {
+            position = { row = 2, col = "100%" },
+        },
+    },
+    notify = {
+        position = { row = 2, col = "100%" },
     },
 })
