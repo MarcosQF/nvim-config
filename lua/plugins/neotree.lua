@@ -32,8 +32,11 @@ require('neo-tree').setup({
 
     filesystem = {
         group_empty_dirs = true,
-        hijack_netrw_behavior = "open_default",
-
+        hijack_netrw_behavior = "open_current",
+        follow_current_file = {
+            enabled = true,
+            leave_dirs_open = false,
+        },
         filtered_items = {
             visible = false,
             hide_dotfiles = true,
