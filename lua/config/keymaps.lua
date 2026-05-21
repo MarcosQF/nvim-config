@@ -8,8 +8,15 @@ vim.keymap.set("n", "vig", "ggVG", { desc = "Select all file" })
 vim.keymap.set("n","J","mzJ`z", {desc = "Join lines without moving cursor"})
 vim.keymap.set("n", "<C-u>", "<C-u>zz", {desc = 'Centered scroll up'})
 vim.keymap.set("n", "<C-d>", "<C-d>zz", {desc = 'Centered scroll down'})
+vim.keymap.set("n", "G", "Gzz", {desc = 'Centered go last line'})
 vim.keymap.set("n", "n", "nzzzv", {desc = 'Next search, cursor centered'})
 vim.keymap.set("n", "N", "Nzzzv", {desc = 'Previous search, cursor centered'})
+
+-- Move between windows using Ctrl + hjkl
+vim.keymap.set('n', '<C-h>', '<C-w>h', { desc = "Move to left window" })
+vim.keymap.set('n', '<C-j>', '<C-w>j', { desc = "Move to bottom window" })
+vim.keymap.set('n', '<C-k>', '<C-w>k', { desc = "Move to top window" })
+vim.keymap.set('n', '<C-l>', '<C-w>l', { desc = "Move to right window" })
 
 -- save file
 vim.keymap.set("n", "W", "<cmd>w<cr>")

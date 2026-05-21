@@ -1,0 +1,37 @@
+vim.pack.add{
+    { src = 'https://github.com/mfussenegger/nvim-dap' },
+    { src = 'https://github.com/jay-babu/mason-nvim-dap.nvim' },
+    { src = 'https://github.com/igorlfs/nvim-dap-view' },
+}
+
+require ('mason-nvim-dap').setup({
+    ensure_installed = {'python'},
+    handlers = {},
+})
+
+require('dap-view').setup({
+    winbar = {
+        sections = {"watches", "scopes", "exceptions", "breakpoints", "threads", "repl", "console"},
+    },
+    auto_toggle = true,
+    windows = {
+        size = 0.35,
+        position = "below",
+    },
+})
+
+vim.keymap.set('n', '<leader>db', function() require('dap').toggle_breakpoint() end, { desc = "Toggle Breakpoint" })
+vim.keymap.set('n', '<leader>ds', function() require('dap').continue() end, { desc = "Continue" })
+vim.keymap.set('n', '<leader>de', function() require('dap').terminate() end, { desc = "Terminate" })
+vim.keymap.set('n', '<leader>do', function() require('dap').step_over() end, { desc = "Step Over" })
+vim.keymap.set('n', '<leader>di', function() require('dap').step_into() end, { desc = "Step Into" })
+
+-- move trought dap-view sections
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "dap-view",
+  callback = function()
+    vim.keymap.set('n', 'L', '<cmd>DapViewNavigate 1<cr>', { buffer = true, desc = "Next section" })
+
+    vim.keymap.set('n', 'H', '<cmd>DapViewNavigate -1<cr>', { buffer = true, desc = "Previous section" })
+  end,
+})
