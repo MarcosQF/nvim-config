@@ -25,6 +25,7 @@ vim.pack.add({
     { src = 'https://github.com/MunifTanjim/nui.nvim' },
     { src = 'https://github.com/mfussenegger/nvim-dap' },
     { src = 'https://github.com/igorlfs/nvim-dap-view' },
-    { src = "https://github.com/romus204/tree-sitter-manager.nvim" }
+    { src = "https://github.com/romus204/tree-sitter-manager.nvim" },
+    { src = "https://github.com/stevearc/conform.nvim" },
 
 })
