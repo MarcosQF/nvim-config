@@ -1,9 +1,3 @@
-vim.pack.add({
-    'https://github.com/saghen/blink.lib',
-    'https://github.com/Saghen/blink.cmp',
-    'https://github.com/rafamadriz/friendly-snippets',
-})
-
 require('blink.cmp').setup({
     completion = {
         list = {

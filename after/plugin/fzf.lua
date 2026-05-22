@@ -1,10 +1,10 @@
-vim.pack.add({ 'https://github.com/ibhagwan/fzf-lua' })
 local fzf = require("fzf-lua")
 
 fzf.setup({
     winopts = {
         backdrop = 100,
         border = "rounded",
+        preview = { layout = 'vertical' },
     },
     keymap = {
         builtin = {
@@ -19,7 +19,7 @@ fzf.setup({
 
 fzf.register_ui_select()
 
-vim.keymap.set("n", "<leader><leader>", function()
+vim.keymap.set("n", "<leader>f", function()
     require("fzf-lua").files()
 end, { desc = "Fzf-Lua: Find files" })
 

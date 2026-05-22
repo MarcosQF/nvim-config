@@ -1,10 +1,3 @@
-vim.pack.add({
-	{
-		src = "https://github.com/rose-pine/neovim",
-		name = "rose-pine",
-	},
-})
-
 require("rose-pine").setup(
     {
         highlight_groups = {

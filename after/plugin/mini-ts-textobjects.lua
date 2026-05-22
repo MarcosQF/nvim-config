@@ -1,7 +1,3 @@
-vim.pack.add({ 'https://github.com/nvim-treesitter/nvim-treesitter-textobjects' })
-vim.pack.add({ 'https://github.com/echasnovski/mini.extra' })
-vim.pack.add({ 'https://github.com/echasnovski/mini.ai' })
-
 local ai = require("mini.ai")
 local gen_spec = ai.gen_spec
 local extra_spec = require("mini.extra").gen_ai_spec

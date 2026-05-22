@@ -1,5 +1,3 @@
-vim.pack.add({ 'https://github.com/akinsho/bufferline.nvim' })
-
 local bufferline = require("bufferline")
 
 bufferline.setup({

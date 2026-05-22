@@ -91,3 +91,5 @@ vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "Show Documentation" })
 vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Go to Definition" })
 vim.keymap.set("n", "gi", vim.lsp.buf.implementation, { desc = "Go to Implementation" })
 
+-- Lazygit
+vim.keymap.set("n", "<leader>gg", "<cmd>LazyGit<cr>", { desc = "Open lazygit" })

@@ -12,10 +12,9 @@ require('neo-tree').setup({
     close_if_last_window = false,
     enable_git_status = true,
     popup_border_style = "rounded",
-
     window = {
         position = "left",
-        width = 35,
+        width = 40,
         mapping_options = {
             noremap = true,
             nowait = true,
@@ -31,7 +30,7 @@ require('neo-tree').setup({
     },
 
     filesystem = {
-        group_empty_dirs = true,
+        group_empty_dirs = false,
         hijack_netrw_behavior = "open_current",
         follow_current_file = {
             enabled = true,
@@ -41,6 +40,10 @@ require('neo-tree').setup({
             visible = false,
             hide_dotfiles = true,
             hide_gitignored = true,
+        },
+
+        components = {
+            compact_target_lines = false,
         },
     },
 })
