@@ -5,5 +5,4 @@ require("options")
 require("autocommands")
 require("pack")
 
-require("plugins")
 require("lsps")
