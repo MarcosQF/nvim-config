@@ -11,10 +11,10 @@ vim.pack.add({
     { src = 'https://github.com/smjonas/inc-rename.nvim' },
     { src = 'https://github.com/kdheepak/lazygit.nvim' },
     { src = 'https://github.com/nvim-lualine/lualine.nvim' },
-    { src = 'https://github.com/nvim-lualine/lualine.nvim' },
     { src = 'https://github.com/neovim/nvim-lspconfig' },
     { src = 'https://github.com/mason-org/mason.nvim' },
     { src = 'https://github.com/williamboman/mason-lspconfig.nvim' },
+    { src = 'https://github.com/jay-babu/mason-nvim-dap.nvim' },
     { src = 'https://github.com/nvim-mini/mini.bufremove' },
     { src = 'https://github.com/nvim-mini/mini.pairs' },
     { src = 'https://github.com/nvim-mini/mini.surround' },
@@ -24,7 +24,6 @@ vim.pack.add({
     { src = 'https://github.com/folke/noice.nvim' },
     { src = 'https://github.com/MunifTanjim/nui.nvim' },
     { src = 'https://github.com/mfussenegger/nvim-dap' },
-    { src = 'https://github.com/jay-babu/mason-nvim-dap.nvim' },
     { src = 'https://github.com/igorlfs/nvim-dap-view' },
     { src = "https://github.com/romus204/tree-sitter-manager.nvim" }
 
