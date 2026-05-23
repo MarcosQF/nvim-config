@@ -22,3 +22,6 @@ require("noice").setup({
         },
     },
 })
+
+
+vim.keymap.set("n", "<leader>n", "<cmd>Noice all<CR>", { desc = "Notifications history" })

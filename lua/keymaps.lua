@@ -93,3 +93,4 @@ vim.keymap.set("n", "gi", vim.lsp.buf.implementation, { desc = "Go to Implementa
 
 -- Lazygit
 vim.keymap.set("n", "<leader>gg", "<cmd>LazyGit<cr>", { desc = "Open lazygit" })
+
