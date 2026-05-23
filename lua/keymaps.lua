@@ -5,18 +5,18 @@ vim.g.maplocalleader = " "
 vim.keymap.set("n", "vig", "ggVG", { desc = "Select all file" })
 
 -- smooth move arround
-vim.keymap.set("n","J","mzJ`z", {desc = "Join lines without moving cursor"})
-vim.keymap.set("n", "<C-u>", "<C-u>zz", {desc = 'Centered scroll up'})
-vim.keymap.set("n", "<C-d>", "<C-d>zz", {desc = 'Centered scroll down'})
-vim.keymap.set("n", "G", "Gzz", {desc = 'Centered go last line'})
-vim.keymap.set("n", "n", "nzzzv", {desc = 'Next search, cursor centered'})
-vim.keymap.set("n", "N", "Nzzzv", {desc = 'Previous search, cursor centered'})
+vim.keymap.set("n", "J", "mzJ`z", { desc = "Join lines without moving cursor" })
+vim.keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Centered scroll up" })
+vim.keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Centered scroll down" })
+vim.keymap.set("n", "G", "Gzz", { desc = "Centered go last line" })
+vim.keymap.set("n", "n", "nzzzv", { desc = "Next search, cursor centered" })
+vim.keymap.set("n", "N", "Nzzzv", { desc = "Previous search, cursor centered" })
 
 -- Move between windows using Ctrl + hjkl
-vim.keymap.set('n', '<C-h>', '<C-w>h', { desc = "Move to left window" })
-vim.keymap.set('n', '<C-j>', '<C-w>j', { desc = "Move to bottom window" })
-vim.keymap.set('n', '<C-k>', '<C-w>k', { desc = "Move to top window" })
-vim.keymap.set('n', '<C-l>', '<C-w>l', { desc = "Move to right window" })
+vim.keymap.set("n", "<C-h>", "<C-w>h", { desc = "Move to left window" })
+vim.keymap.set("n", "<C-j>", "<C-w>j", { desc = "Move to bottom window" })
+vim.keymap.set("n", "<C-k>", "<C-w>k", { desc = "Move to top window" })
+vim.keymap.set("n", "<C-l>", "<C-w>l", { desc = "Move to right window" })
 
 -- save file
 vim.keymap.set("n", "<leader>w", "<cmd>w<cr>")
@@ -46,43 +46,43 @@ vim.keymap.set("v", "<A-h>", "<gv", { desc = "Decrease indentation and re-select
 vim.keymap.set("v", "<A-l>", ">gv", { desc = "Increase indentation and re-select" })
 
 -- Keeping the cursor centered.
-vim.keymap.set('n', '<C-d>', '<C-d>zz', { desc = 'Scroll downwards' })
-vim.keymap.set('n', '<C-u>', '<C-u>zz', { desc = 'Scroll upwards' })
-vim.keymap.set('n', 'n', 'nzzzv', { desc = 'Next result' })
-vim.keymap.set('n', 'N', 'Nzzzv', { desc = 'Previous result' })
+vim.keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Scroll downwards" })
+vim.keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Scroll upwards" })
+vim.keymap.set("n", "n", "nzzzv", { desc = "Next result" })
+vim.keymap.set("n", "N", "Nzzzv", { desc = "Previous result" })
 
--- Icremental selection 
+-- Icremental selection
 vim.keymap.set({ "n", "x" }, "<A-o>", function()
-  require("vim.treesitter._select").select_parent(vim.v.count1)
+	require("vim.treesitter._select").select_parent(vim.v.count1)
 end, { desc = "Expand Treesitter selection (Parent/Outside)" })
 
 vim.keymap.set("x", "<A-i>", function()
-  require("vim.treesitter._select").select_child(vim.v.count1)
+	require("vim.treesitter._select").select_child(vim.v.count1)
 end, { desc = "Shrink Treesitter selection (Child/Inside)" })
 
 -- Native autocomplete
 vim.keymap.set("i", "<Tab>", function()
-  if vim.fn.pumvisible() == 1 then
-    return "<C-n>"
-  else
-    return "<Tab>"
-  end
+	if vim.fn.pumvisible() == 1 then
+		return "<C-n>"
+	else
+		return "<Tab>"
+	end
 end, { expr = true, desc = "Next autocomplete suggestion" })
 
 vim.keymap.set("i", "<S-Tab>", function()
-  if vim.fn.pumvisible() == 1 then
-    return "<C-p>"
-  else
-    return "<S-Tab>"
-  end
+	if vim.fn.pumvisible() == 1 then
+		return "<C-p>"
+	else
+		return "<S-Tab>"
+	end
 end, { expr = true, desc = "Previous autocomplete suggestion" })
 
 vim.keymap.set("i", "<CR>", function()
-  if vim.fn.pumvisible() == 1 then
-    return "<C-y>"
-  else
-    return "<CR>"
-  end
+	if vim.fn.pumvisible() == 1 then
+		return "<C-y>"
+	else
+		return "<CR>"
+	end
 end, { expr = true, desc = "Accept autocomplete suggestion" })
 
 -- LSP & DIAGNOSTICS
@@ -90,7 +90,7 @@ vim.keymap.set("n", "<leader>cd", vim.diagnostic.open_float, { desc = "Show line
 vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "Show Documentation" })
 vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Go to Definition" })
 vim.keymap.set("n", "gi", vim.lsp.buf.implementation, { desc = "Go to Implementation" })
+vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "Code Action" })
 
 -- Lazygit
 vim.keymap.set("n", "<leader>gg", "<cmd>LazyGit<cr>", { desc = "Open lazygit" })
-
