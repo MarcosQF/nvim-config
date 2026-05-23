@@ -3,7 +3,6 @@ vim.pack.add({
     { src = 'https://github.com/saghen/blink.lib' },
     { src = 'https://github.com/Saghen/blink.cmp' },
     { src = 'https://github.com/rafamadriz/friendly-snippets' },
-    { src = 'https://github.com/akinsho/bufferline.nvim' },
     { src = 'https://github.com/folke/flash.nvim' },
     { src = 'https://github.com/ibhagwan/fzf-lua' },
     { src = 'https://github.com/lewis6991/gitsigns.nvim' },
@@ -27,5 +26,10 @@ vim.pack.add({
     { src = 'https://github.com/igorlfs/nvim-dap-view' },
     { src = "https://github.com/romus204/tree-sitter-manager.nvim" },
     { src = "https://github.com/stevearc/conform.nvim" },
+    { src = "https://github.com/nvim-lua/plenary.nvim" },
+    { src = "https://github.com/theprimeagen/harpoon", version = "harpoon2" },
+    { src = "https://github.com/nvim-tree/nvim-web-devicons" },
+    { src = "https://github.com/b0o/incline.nvim" },
+    { src = "https://github.com/abecodes/tabout.nvim" },
 
 })

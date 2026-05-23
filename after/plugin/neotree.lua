@@ -11,6 +11,7 @@ vim.g.loaded_netrwPlugin = 1
 require('neo-tree').setup({
     close_if_last_window = false,
     enable_git_status = true,
+    auto_expand_width = true,
     popup_border_style = "rounded",
     window = {
         position = "left",
@@ -43,7 +44,8 @@ require('neo-tree').setup({
         },
 
         components = {
-            compact_target_lines = false,
+            compact_target_lines = true,
+            enable_character_fade = false,
         },
     },
 })

@@ -19,7 +19,7 @@ vim.keymap.set('n', '<C-k>', '<C-w>k', { desc = "Move to top window" })
 vim.keymap.set('n', '<C-l>', '<C-w>l', { desc = "Move to right window" })
 
 -- save file
-vim.keymap.set("n", "W", "<cmd>w<cr>")
+vim.keymap.set("n", "<leader>w", "<cmd>w<cr>")
 
 -- Quit or close current buffer quickly
 vim.keymap.set("n", "<leader>qq", "<cmd>q<cr>", { desc = "[Q]uit [Q]uickly (close buffer)" })

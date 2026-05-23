@@ -27,6 +27,10 @@ vim.keymap.set("n", "<leader>/", function()
     require("fzf-lua").live_grep()
 end, { desc = "Fzf-Lua: Live grep (Search text)" })
 
+vim.keymap.set("n", "<leader>bb", function()
+  require("fzf-lua").buffers()
+end, { desc = "Fzf-lua: List Buffers" })
+
 vim.keymap.set("n", "<leader>ca", function()
   require('fzf-lua').lsp_code_actions({
     winopts = {
