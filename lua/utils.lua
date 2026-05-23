@@ -25,8 +25,8 @@ function M.load_plugins(plugins)
 	if #duplicate_names > 0 then
 		local names_str = table.concat(duplicate_names, ", ")
 		vim.schedule(function()
-			vim.notify("Duplicated plugins found: " .. names_str, vim.log.levels.WARN, {
-				title = "Gerenciador de Plugins",
+			vim.notify("Found: " .. names_str, vim.log.levels.WARN, {
+				title = "Duplicated Plugins ",
 				timeout = 1000000,
 			})
 		end)
