@@ -7,8 +7,3 @@ vim.api.nvim_create_user_command('PluginsUpdate', function()
     vim.pack.update()
     print("Fetching plugin updates from")
 end, { desc = "Update packages from" })
-
-vim.api.nvim_create_user_command('PluginsUpdate', function()
-    vim.pack.update()
-    print("Fetching plugin updates from")
-end, { desc = "Update packages from" })
