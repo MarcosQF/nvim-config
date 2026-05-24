@@ -3,10 +3,19 @@ local builtin = require("telescope.builtin")
 
 telescope.setup({
 	defaults = {
+        sorting_strategy = "ascending",
+		layout_strategy = "horizontal",
+		layout_config = {
+			horizontal = {
+				prompt_position = "top",
+				preview_width = 0.55,
+			},
+			width = 0.8,
+		},
 		mappings = {
 			i = {
-				["<Tab>"] = require("telescope.actions").move_selection_previous,
-				["<S-Tab>"] = require("telescope.actions").move_selection_next,
+				["<S-Tab>"] = require("telescope.actions").move_selection_previous,
+				["<Tab>"] = require("telescope.actions").move_selection_next,
 			},
 		},
 	},
