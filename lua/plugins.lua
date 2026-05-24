@@ -35,4 +35,5 @@ utils.load_plugins({
     { src = "https://github.com/b0o/incline.nvim" },
     { src = "https://github.com/abecodes/tabout.nvim" },
     { src = 'https://github.com/nvim-neo-tree/neo-tree.nvim' },
+    { src = 'https://github.com/wansmer/treesj' },
 })

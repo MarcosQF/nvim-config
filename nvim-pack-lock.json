@@ -136,6 +136,10 @@
     "tree-sitter-manager.nvim": {
       "rev": "7d0e588297acd2b906c77a9da9ecf716d5de7746",
       "src": "https://github.com/romus204/tree-sitter-manager.nvim"
+    },
+    "treesj": {
+      "rev": "5fa4e7ba3517f8fe743bb4488f9e9c7ce83330fc",
+      "src": "https://github.com/wansmer/treesj"
     }
   }
 }
