@@ -2,6 +2,14 @@ local telescope = require("telescope")
 local builtin = require("telescope.builtin")
 
 telescope.setup({
+	defaults = {
+		mappings = {
+			i = {
+				["<Tab>"] = require("telescope.actions").move_selection_previous,
+				["<S-Tab>"] = require("telescope.actions").move_selection_next,
+			},
+		},
+	},
 	pickers = {
 		find_files = {
 			hidden = true,
@@ -17,7 +25,7 @@ telescope.setup({
 
 telescope.load_extension("ui-select")
 
-vim.keymap.set("n", "<leader>ff", builtin.find_files, { desc = "Telescope find files" })
+vim.keymap.set("n", "<leader>f", builtin.find_files, { desc = "Telescope find files" })
 vim.keymap.set("n", "<leader>/", builtin.live_grep, { desc = "Telescope live grep" })
-vim.keymap.set("n", "<leader>fb", builtin.buffers, { desc = "Telescope buffers" })
-vim.keymap.set("n", "<leader>fn", "<cmd>Noice telescope<cr>", { desc = "Noice History Telescope" })
+vim.keymap.set("n", "<leader>bb", builtin.buffers, { desc = "Telescope buffers" })
+vim.keymap.set("n", "<leader>n", "<cmd>Noice telescope<cr>", { desc = "Noice History Telescope" })
