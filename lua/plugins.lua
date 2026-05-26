@@ -1,7 +1,6 @@
 local utils = require("utils")
 
 utils.load_plugins({
-    { src = "https://github.com/rose-pine/neovim", name = "rose-pine" },
     { src = 'https://github.com/saghen/blink.lib' },
     { src = 'https://github.com/Saghen/blink.cmp' },
     { src = 'https://github.com/rafamadriz/friendly-snippets' },
@@ -32,8 +31,8 @@ utils.load_plugins({
     { src = "https://github.com/nvim-lua/plenary.nvim" },
     { src = "https://github.com/theprimeagen/harpoon", version = "harpoon2" },
     { src = "https://github.com/nvim-tree/nvim-web-devicons" },
-    { src = "https://github.com/b0o/incline.nvim" },
     { src = "https://github.com/abecodes/tabout.nvim" },
-    { src = 'https://github.com/nvim-neo-tree/neo-tree.nvim' },
+    { src = 'https://github.com/nvim-tree/nvim-tree.lua' },
     { src = 'https://github.com/wansmer/treesj' },
+    { src = 'https://github.com/AvengeMedia/base46' },
 })
