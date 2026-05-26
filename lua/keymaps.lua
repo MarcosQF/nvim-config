@@ -21,6 +21,9 @@ vim.keymap.set("n", "<C-l>", "<C-w>l", { desc = "Move to right window" })
 -- save file
 vim.keymap.set("n", "<leader>w", "<cmd>w<cr>")
 
+-- add exec permission to the file
+vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
+
 -- Quit or close current buffer quickly
 vim.keymap.set("n", "<leader>qq", "<cmd>q<cr>", { desc = "[Q]uit [Q]uickly (close buffer)" })
 
