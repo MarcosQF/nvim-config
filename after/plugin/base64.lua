@@ -1,3 +1,5 @@
-require('base46').setup()
+require("base46").setup({
+	transparency = true,
+})
 
-vim.cmd.colorscheme("base46-rosepine")
+vim.cmd.colorscheme("base46-everforest")
