@@ -3,7 +3,8 @@ local builtin = require("telescope.builtin")
 
 telescope.setup({
 	defaults = {
-        sorting_strategy = "ascending",
+		path_display = { "filename_first" },
+		sorting_strategy = "ascending",
 		layout_strategy = "horizontal",
 		layout_config = {
 			horizontal = {
@@ -37,4 +38,5 @@ telescope.load_extension("ui-select")
 vim.keymap.set("n", "<leader>f", builtin.find_files, { desc = "Telescope find files" })
 vim.keymap.set("n", "<leader>/", builtin.live_grep, { desc = "Telescope live grep" })
 vim.keymap.set("n", "<leader>bb", builtin.buffers, { desc = "Telescope buffers" })
+vim.keymap.set("n", "<leader>cu", builtin.colorscheme, { desc = "Telescope colors" })
 vim.keymap.set("n", "<leader>n", "<cmd>Noice telescope<cr>", { desc = "Noice History Telescope" })

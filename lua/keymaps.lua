@@ -1,6 +1,11 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
+-- clipboard
+vim.keymap.set("x", "<leader>p", [["_dP]])
+vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
+vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
+
 -- Select entire file content
 vim.keymap.set("n", "vig", "ggVG", { desc = "Select all file" })
 
@@ -39,12 +44,8 @@ vim.keymap.set("v", "gh", "0")
 -- Move lines up and down
 vim.keymap.set("v", "<A-j>", ":m '>+1<CR>gv=gv", { desc = "Move lines down in visual mode" })
 vim.keymap.set("v", "<A-k>", ":m '<-2<CR>gv=gv", { desc = "Move lines up in visual mode" })
-vim.keymap.set("n", "<A-j>", ":m .+1<CR>==", { desc = "Move line down" })
-vim.keymap.set("n", "<A-k>", ":m .-2<CR>==", { desc = "Move line up" })
 
 -- Ident lines horizontaly
-vim.keymap.set("n", "<A-h>", "<<", { desc = "Decrease indentation" })
-vim.keymap.set("n", "<A-l>", ">>", { desc = "Increase indentation" })
 vim.keymap.set("v", "<A-h>", "<gv", { desc = "Decrease indentation and re-select" })
 vim.keymap.set("v", "<A-l>", ">gv", { desc = "Increase indentation and re-select" })
 

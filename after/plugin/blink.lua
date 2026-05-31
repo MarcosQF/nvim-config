@@ -1,24 +1,29 @@
-require('blink.cmp').setup({
-    completion = {
-        list = {
-            selection = {
-                preselect = false,
-                auto_insert = true,
-            }
-        }
-    },
+require("blink.cmp").setup({
+	completion = {
+		menu = {
+			border = "rounded",
+		},
+		documentation = {
+			auto_show = false,
+			window = { border = "rounded" },
+		},
+		list = {
+			selection = {
+				preselect = false,
+				auto_insert = true,
+			},
+		},
+	},
 
-    keymap = {
-        preset = 'enter',
-        ['<Tab>'] = { 'select_next', 'snippet_forward', 'fallback' },
-        ['<S-Tab>'] = { 'select_prev', 'snippet_backward', 'fallback' },
-    },
+	keymap = {
+		preset = "enter",
+	},
 
-    sources = {
-        default = { 'lsp', 'path', 'snippets', 'buffer' }
-    },
+	sources = {
+		default = { "lsp", "path", "snippets", "buffer" },
+	},
 
-    fuzzy = {
-        implementation = "lua"
-    }
+	fuzzy = {
+		implementation = "lua",
+	},
 })

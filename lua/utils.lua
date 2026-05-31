@@ -1,5 +1,4 @@
 local M = {}
-
 function M.load_plugins(plugins)
 	local seen = {}
 	local unique_duplicates = {}
