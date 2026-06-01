@@ -129,10 +129,6 @@
       "rev": "7d324792b7943e4aa16ad007212e6acc6f9fe335",
       "src": "https://github.com/nvim-telescope/telescope.nvim"
     },
-    "tmux.nvim": {
-      "rev": "32ceaf2793582955ef9576809730878c4d2d9426",
-      "src": "https://github.com/aserowy/tmux.nvim"
-    },
     "tree-sitter-manager.nvim": {
       "rev": "bb66b815aff01e87b2e26be995116be8d2f91474",
       "src": "https://github.com/romus204/tree-sitter-manager.nvim"
