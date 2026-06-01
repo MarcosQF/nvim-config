@@ -3,7 +3,6 @@ vim.g.maplocalleader = " "
 
 -- clipboard
 vim.keymap.set("x", "<leader>p", [["_dP]])
-vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
 vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
 
 -- Select entire file content

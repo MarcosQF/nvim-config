@@ -30,7 +30,7 @@ vim.opt.laststatus = 3
 vim.opt.swapfile = false
 vim.opt.backup = false
 
-vim.opt.clipboard = ""
+vim.opt.clipboard:append("unnamedplus")
 
 vim.opt.signcolumn = "yes"
 vim.opt.termguicolors = true
