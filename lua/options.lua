@@ -1,6 +1,6 @@
 vim.g.netrw_banner = 0
 
-vim.opt.winbar = "%= %t %m"
+-- vim.opt.winbar = "%= %t %m"
 
 vim.opt.nu = true
 vim.opt.relativenumber = true

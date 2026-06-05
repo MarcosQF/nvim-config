@@ -40,14 +40,15 @@ require("nvim-tree").setup({
   },
 
   renderer = {
-    root_folder_label = false,
+    root_folder_label = ":t",
     group_empty = false,
     icons = {
       show = {
-        git = true,
+        git = false,
       },
     },
   },
 })
 
 vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", { desc = "Toggle File Explorer", silent = true })
+vim.api.nvim_set_hl(0, "NvimTreeRootFolder", { link = "NvimTreeFolderName" })
