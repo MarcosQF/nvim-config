@@ -40,14 +40,6 @@ vim.keymap.set("n", "gh", "0")
 vim.keymap.set("v", "gl", "$")
 vim.keymap.set("v", "gh", "0")
 
--- Move lines up and down
-vim.keymap.set("v", "<A-j>", ":m '>+1<CR>gv=gv", { desc = "Move lines down in visual mode" })
-vim.keymap.set("v", "<A-k>", ":m '<-2<CR>gv=gv", { desc = "Move lines up in visual mode" })
-
--- Ident lines horizontaly
-vim.keymap.set("v", "<A-h>", "<gv", { desc = "Decrease indentation and re-select" })
-vim.keymap.set("v", "<A-l>", ">gv", { desc = "Increase indentation and re-select" })
-
 -- Keeping the cursor centered.
 vim.keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Scroll downwards" })
 vim.keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Scroll upwards" })
@@ -91,9 +83,8 @@ end, { expr = true, desc = "Accept autocomplete suggestion" })
 -- LSP & DIAGNOSTICS
 vim.keymap.set("n", "<leader>cd", vim.diagnostic.open_float, { desc = "Show line diagnostics" })
 vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "Show Documentation" })
-vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Go to Definition" })
-vim.keymap.set("n", "gi", vim.lsp.buf.implementation, { desc = "Go to Implementation" })
 vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "Code Action" })
 
--- Lazygit
-vim.keymap.set("n", "<leader>gg", "<cmd>LazyGit<cr>", { desc = "Open lazygit" })
+-- Resize Windoes
+vim.keymap.set({ "n", "t" }, "<A-.>", "<cmd>resize +2<CR>", { desc = "Aumentar altura (+2)" })
+vim.keymap.set({ "n", "t" }, "<A-,>", "<cmd>resize -2<CR>", { desc = "Diminuir altura (-2)" })
