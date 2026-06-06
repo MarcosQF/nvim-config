@@ -88,3 +88,4 @@ vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "Code Action
 -- Resize Windoes
 vim.keymap.set({ "n", "t" }, "<A-.>", "<cmd>resize +2<CR>", { desc = "Aumentar altura (+2)" })
 vim.keymap.set({ "n", "t" }, "<A-,>", "<cmd>resize -2<CR>", { desc = "Diminuir altura (-2)" })
+vim.keymap.set("n", "gm", "`", { noremap = true, desc = "Go to mark" })
