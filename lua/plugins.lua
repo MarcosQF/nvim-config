@@ -29,6 +29,6 @@ utils.load_plugins({
     { src = "https://github.com/theprimeagen/harpoon", version = "harpoon2" },
     { src = "https://github.com/nvim-tree/nvim-web-devicons" },
     { src = 'https://github.com/wansmer/treesj' },
-    { src = 'https://github.com/AvengeMedia/base46' },
     { src = 'https://github.com/folke/snacks.nvim' },
+    { src = 'https://github.com/folke/tokyonight.nvim' },
 })
