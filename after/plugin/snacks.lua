@@ -1,9 +1,25 @@
 require("snacks").setup({
     explorer     = { enabled = true },
     bigfile      = { enabled = true },
-    indent       = { enabled = true },
-    input        = { enabled = true },
-    notifier     = { enabled = true, timeout = 3000 },
+    indent       = { enabled = false },
+    input = {
+        enabled = true,
+        icon = " ",
+
+        win = {
+            style = "input",
+            border = "rounded",
+
+            keys = {
+                i_esc = { "<esc>", { "cmp_close", "cancel" }, mode = "i", expr = true },
+            },
+
+            position = "float",
+            relative = "cursor",
+            width = 40,
+            backdrop = false,
+        }
+    },
     picker = {
         sources = {
             explorer = {

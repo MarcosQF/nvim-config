@@ -1,5 +1,5 @@
 require("base46").setup({
-	transparency = false,
+	transparency = true,
     hl_override = {
 		Visual = {
             bg = "#45475a",
