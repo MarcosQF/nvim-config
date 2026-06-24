@@ -36,10 +36,10 @@ require("snacks").setup({
     terminal = {
         enabled = true,
         win = {
-            -- style = "float",
+            style = "float",
             -- width = 0.85,
             -- height = 0.60,
-            -- border = "rounded"
+            border = "rounded",
             title = "Terminal",
         },
     },
