@@ -1,9 +1,9 @@
 local utils = require("utils")
 
 utils.load_plugins({
-    { src = 'https://github.com/saghen/blink.lib' },
-    { src = 'https://github.com/Saghen/blink.cmp' },
-    { src = 'https://github.com/rafamadriz/friendly-snippets' },
+    { src = 'https://github.com/nvim-mini/mini.completion'},
+    { src = 'https://github.com/nvim-mini/mini.snippets' },
+    { src = 'https://github.com/nvim-mini/mini.icons' },
     { src = 'https://github.com/folke/flash.nvim' },
     { src = 'https://github.com/lewis6991/gitsigns.nvim' },
     { src = 'https://github.com/windwp/nvim-ts-autotag' },
@@ -14,7 +14,6 @@ utils.load_plugins({
     { src = 'https://github.com/williamboman/mason-lspconfig.nvim' },
     { src = 'https://github.com/jay-babu/mason-nvim-dap.nvim' },
     { src = 'https://github.com/nvim-mini/mini.pairs' },
-    { src = 'https://github.com/nvim-mini/mini.surround' },
     { src = 'https://github.com/echasnovski/mini.extra' },
     { src = 'https://github.com/echasnovski/mini.ai' },
     { src = 'https://github.com/nvim-mini/mini.move' },
@@ -27,7 +26,6 @@ utils.load_plugins({
     { src = "https://github.com/stevearc/conform.nvim" },
     { src = "https://github.com/nvim-lua/plenary.nvim" },
     { src = "https://github.com/theprimeagen/harpoon", version = "harpoon2" },
-    { src = "https://github.com/nvim-tree/nvim-web-devicons" },
     { src = 'https://github.com/wansmer/treesj' },
     { src = 'https://github.com/folke/snacks.nvim' },
     { src = 'https://github.com/folke/tokyonight.nvim' },

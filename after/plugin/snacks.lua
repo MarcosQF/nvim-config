@@ -46,9 +46,12 @@ require("snacks").setup({
 })
 
 
+
+
+
 local map = vim.keymap.set
 
-map("n", "<leader>f", function() require("snacks").picker.smart() end, { desc = "Find Files" })
+map("n", "<leader>f", function() require("snacks").picker.files({ root = false }) end, { desc = "Find Files (Current Workspace)" })
 map("n", "<leader>/", function() require("snacks").picker.grep() end, { desc = "Grep (Find Text)" })
 map("n", "<leader>b", function() require("snacks").picker.buffers() end, { desc = "Open Buffers" })
 map("n", "<leader>e",  function() require("snacks").explorer() end, { desc = "File Explrer(FileTree)" })
