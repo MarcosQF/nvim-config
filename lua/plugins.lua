@@ -29,4 +29,6 @@ utils.load_plugins({
     { src = 'https://github.com/wansmer/treesj' },
     { src = 'https://github.com/folke/snacks.nvim' },
     { src = 'https://github.com/folke/tokyonight.nvim' },
+    { src = 'https://github.com/sainnhe/sonokai' },
+    { src = 'https://github.com/lervag/vimtex' },
 })

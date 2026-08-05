@@ -1,4 +1,14 @@
-require("mini.completion").setup()
+require("mini.completion").setup({
+    delay = {
+        completion = 10,
+        info = 2000000,
+        signature = 2000000,
+    },
+    window = {
+        info = { border = "none" },
+        signature = { border = "none" },
+    },
+})
 require("mini.icons").setup()
 require("mini.snippets").setup(
 	{
